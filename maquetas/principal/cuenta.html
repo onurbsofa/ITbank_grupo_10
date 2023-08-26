@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cuenta.css">
+</head>
+<body>
+    <!-- esta sección podríamostrar un resumen de las cuentas bancarias del usuario, 
+    incluyendo lossaldos actuales, movimientos recientes o gráficos ilustrativos. -->
+    <div class="primerSeccionCuenta">
+        <h2 id="tuCuenta">Tu cuenta</h2>
+
+        <select name="opciones" id="menuOpciones">
+            <option value="cuentas" selected>Cuentas</option>
+            <option value="resumen">Resúmenes de cuentas</option>
+            <option value="tarjetas">Tarjetas</option>
+            <option value="tarjetas">Movimientos</option>
+          </select>
+    </div>
+    <div class="segundaSeccionCuenta">
+        <div id="titleCuentas">
+            <h3 id="cuentas">Cuentas</h3>
+        </div>
+        <div class="tercerSeccionCuentas">
+                <div class="cajasAhorro">
+                    <h5>Caja ahorro pesos</h5>
+                    <p>$44.444,44</p>
+                    <p>Nº 12345-6 789-10</p>
+                </div>
+                <div class="cajasAhorro">
+                    <h5>Obtene una caja ahorro en dolares</h5>
+                    <p>100% bonificada</p>
+                    <button>Solicitar</button>
+                </div>
+        </div>
+    </div>
+    <div class="cuartaSeccionCuenta">
+        <div id="tituloMovimientosRecientes">
+            <p id="movimientosRecientes"><b>Movimientos recientes:</b></p>
+        </div>
+        <div>
+            <ul id="listaMovimientos">
+                <li>panaderia: $444</li>
+                <li>carniceria: $444</li>
+                <li>auto: $444</li>
+                <li>supermercado: $444</li>
+            </ul>
+        </div>
+           
+    </div>
+</body>
+</html>

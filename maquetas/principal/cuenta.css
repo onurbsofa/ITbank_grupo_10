@@ -1,0 +1,64 @@
+.primerSeccionCuenta{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 30px;
+    background-color: rgb(130, 157, 157);
+}
+ 
+#tuCuenta{
+    margin: 10px;
+}
+
+#menuOpciones{
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.segundaSeccionCuenta{
+    display: flexbox;
+    text-align: center;
+    align-items: center;   
+    margin: 10px;
+    padding: 30px;
+    background-color: rgb(130, 157, 157);
+}
+
+#cuentas{
+    margin: 10px; 
+}
+
+.tercerSeccionCuentas{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.cajasAhorro{
+    margin: 30px;
+    border-style: solid;
+    padding: 10px;
+    background-color: beige;
+}
+
+.cuartaSeccionCuenta{
+    display: flexbox;
+    align-items: center;   
+    margin: 10px;
+    background-color: rgb(130, 157, 157);
+}
+#tituloMovimientosRecientes{
+    display: flex;
+}
+#movimientosRecientes{
+    margin:10px;
+    padding: 30px;
+
+}
+#listaMovimientos{
+    margin: 10px;
+    padding: 10px;
+    text-align: start;      
+    align-items: center;
+}
