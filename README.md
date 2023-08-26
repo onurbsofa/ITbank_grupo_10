@@ -1,5 +1,7 @@
 # ITbank_grupo_10
+
 ##Home Banking
+
 ###Integrantes:
 - Maximo Sanchez
 - Magalí B. Gonzalez J
