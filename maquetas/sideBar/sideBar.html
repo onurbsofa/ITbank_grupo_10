@@ -3,54 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    height: 100vh;
-  }
-
-  #sidebar {
-    width: 250px;
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-  }
-
-  #sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  #sidebar li {
-    padding: 10px;
-    text-align: center;
-  }
-
-  #sidebar li:hover {
-    background-color: #444;
-  }
-
-  #content {
-    flex: 1;
-    padding: 20px;
-    background-color: #f4f4f4;
-  }
-</style>
 <title>SideBar ITbank</title>
+<link rel="stylesheet" href="sideBar.css">
 </head>
 <body>
-  <div id="sidebar">
-    <ul>
-      <li><button>Página Principal</button></li>
-      <li><button>Mis Cuentas</button></li>
-      <li><button>Transferencias</button></li>
-      <li><button>Servicios</button></li>
-    </ul>
-  </div>
+  <section id="sidebar">
+    <div class="sidebar-component">
+      <h3 class="component-title">nombre de usuario</h3>
+      <img src="" alt="">
+    </div>
+    <div class="sidebar-component">
+      <h3 class="component-title">Menú</h3>
+      <ul>
+        <li><a href=""><button>Página Principal</button></a></li>
+        <li><a href="../principal/cuenta.html"><button>Mi Cuenta</button></a></li>
+        <li><a href="../formularios/formulario-transaccion.html"><button>Transferencias</button></a></li>
+      </ul>
+    </div>
+    <div class="sidebar-component">
+      <h3 class="component-title">Servicios</h3>
+      <ul>
+        <li><a href="../servicios/conversor-moneda/conversor-moneda.html"><button>Conversor de moneda</button></a></li>
+        <li><a href="../servicios/calculadora-prestamo/calculadora-prestamo.html"><button>Calculadora de prestamo</button></a></li>
+        <li><a href=""><button>Ayuda</button></a></li>
+      </ul>
+    </div>
+  </section>
   <div id="content">
     <h1>Bienvenido a ITbank</h1>
   </div>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de Préstamo</title>
+        <link rel="stylesheet" href="./calculadora-prestamo.css">
+    </head>
+    <body>
+        <h1>Calculadora de Préstamo</h1>
+        
+        <form id="loanCalculatorForm">
+            <label for="loanAmount">Monto del Préstamo:</label>
+            <input type="number" id="loanAmount" name="loanAmount" required>
+            
+            <label for="interestRate">Tasa de Interés (%):</label>
+            <input type="number" id="interestRate" name="interestRate" required>
+            
+            <label for="loanTerm">Plazo del Préstamo (meses):</label>
+            <input type="number" id="loanTerm" name="loanTerm" required>
+            
+            <button type="button" id="calculateButton">Calcular Cuota</button>
+        </form>
+        
+        <div id="result">
+            <h2>Resultado</h2>
+            <p>Cuota Mensual: <span id="monthlyPayment"></span></p>
+            <p>Total a Pagar: <span id="totalPayment"></span></p>
+        </div>
+        
+        <script src="../servicios.js" ></script>
+    </body>
+</html>

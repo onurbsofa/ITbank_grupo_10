@@ -1,64 +1,114 @@
-.primerSeccionCuenta{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-    padding: 30px;
-    background-color: rgb(130, 157, 157);
-}
- 
-#tuCuenta{
-    margin: 10px;
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#menuOpciones{
-    margin: 10px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+}
+
+/* Estilos de la primera sección de cuenta */
+.primerSeccionCuenta {
+    background-color: black;
+    color: white;
+    padding: 20px;
     text-align: center;
-    align-items: center;
 }
 
-.segundaSeccionCuenta{
-    display: flexbox;
-    text-align: center;
-    align-items: center;   
-    margin: 10px;
-    padding: 30px;
-    background-color: rgb(130, 157, 157);
+#tuCuenta {
+    font-size: 24px;
 }
 
-#cuentas{
-    margin: 10px; 
+#menuOpciones {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
 }
 
-.tercerSeccionCuentas{
-    display: flex;
-    text-align: center;
-    justify-content: center;
+/* Estilos de la segunda sección de cuenta */
+.segundaSeccionCuenta {
+    padding: 20px;
 }
 
-.cajasAhorro{
-    margin: 30px;
-    border-style: solid;
+#titleCuentas h3 {
+    font-size: 20px;
+}
+
+.cajasAhorro {
+    border: 1px solid black;
     padding: 10px;
-    background-color: beige;
+    margin-bottom: 10px;
 }
 
-.cuartaSeccionCuenta{
-    display: flexbox;
-    align-items: center;   
-    margin: 10px;
-    background-color: rgb(130, 157, 157);
+.cajasAhorro h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
 }
-#tituloMovimientosRecientes{
+
+.cajasAhorro p {
+    font-size: 14px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Estilos de la tercera sección de cuenta */
+.tercerSeccionCuentas {
     display: flex;
+    flex-direction: column;
 }
-#movimientosRecientes{
-    margin:10px;
-    padding: 30px;
 
+/* Estilos de la cuarta sección de cuenta */
+.cuartaSeccionCuenta {
+    padding: 20px;
+    background-color: black;
+    color: white;
 }
-#listaMovimientos{
-    margin: 10px;
-    padding: 10px;
-    text-align: start;      
-    align-items: center;
+
+#tituloMovimientosRecientes {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#movimientosRecientes {
+    font-weight: bold;
+}
+
+#listaMovimientos {
+    list-style: none;
+    font-size: 14px;
+    padding-left: 0;
+}
+
+#listaMovimientos li {
+    margin-bottom: 5px;
+    border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .segundaSeccionCuenta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tercerSeccionCuentas {
+        flex-direction: column;
+        align-items: center;
+    }
 }

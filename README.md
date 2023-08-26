@@ -14,8 +14,9 @@ El proyecto consiste en la creación de un sistema de Home Banking para el banco
 - Consultar saldo
 - Realizar transferencia
 - Pagar servicios
-- Recargar celular
 - Invertir en plazo fijo
 - Solicitar préstamo
-- Salir
+- Consultar movimientos
+
+
 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convertidor de Moneda</title>
+<link rel="stylesheet" href="./conversor.css">
+</head>
+<body>
+    <h1>Convertidor de Moneda</h1>
+    <form>
+        <label for="amount">Monto:</label>
+        <input type="number" id="amount" name="amount" step="any" required>
+        
+        <label for="from_currency">Desde:</label>
+        <select id="from_currency" name="from_currency" required>
+            <option value="usd">Dólar estadounidense (USD)</option>
+            <option value="eur">Euro (EUR)</option>
+            <option value="jpy">Yen japonés (JPY)</option>
+            <!-- Agrega más opciones de moneda según tus necesidades -->
+        </select>
+        
+        <label for="to_currency">A:</label>
+        <select id="to_currency" name="to_currency" required>
+            <option value="usd">Dólar estadounidense (USD)</option>
+            <option value="eur">Euro (EUR)</option>
+            <option value="jpy">Yen japonés (JPY)</option>
+            <!-- Agrega más opciones de moneda según tus necesidades -->
+        </select>
+        
+        <button type="submit">Convertir</button>
+    </form>
+    
+    <h2>Resultado:</h2>
+    <p id="result">El resultado de la conversión se mostrará aquí.</p>
+
+    <script src="../servicios.js" ></script>
+</body>
+</html>
