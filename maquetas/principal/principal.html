@@ -6,16 +6,19 @@
     <title>ITBANK</title>
     <link rel="stylesheet" href="../header/styles.css">
     <link rel="stylesheet" href="../footer//styles.css">
+    <link rel="stylesheet" href="../sideBar/sideBar.css">
+    <link rel="stylesheet" href="principal.css">
 </head>
 <body>
-    <main>
-        <div id="header"></div>
-        <div>
-            <h1>Bienvenido a ITBANK</h1>
-            <h3>Donde tu plata vale</h3> 
-        </div>
-        <div id="footer"></div>
-    </main>
+    <div id="header"></div>
+    <aside id="sidebar"></aside>
+    <div class="container">
+        <h1>Bienvenido a ITBANK</h1>
+        <h3>Su banco digital de confianza para todas sus necesidades financieras</h3>
+        <img src="https://www.casarafael.org.ar/wp-content/uploads/2021/08/Hipotecario-2.png" width="300px" height="300px" alt="logo del banco">
+        <p>Estamos comprometidos en brindarle el mejor servicio posible</p>
+    </div>
+    <div id="footer">
 
     <script>
         fetch('../header/index.html')
@@ -29,6 +32,13 @@
             .then(response => response.text())
             .then(html => {
                 document.getElementById('footer').innerHTML = html;
+            })
+            .catch(error => console.error('Error:', error));
+
+        fetch('../sideBar/sideBar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('sidebar').innerHTML = html;
             })
             .catch(error => console.error('Error:', error));
     </script>
