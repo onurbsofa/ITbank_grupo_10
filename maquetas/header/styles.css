@@ -39,6 +39,9 @@ body {
   .button.cerrar {
     background-color: red;
   }
+  /* .button:hover{ */
+    /* background-color: aqua; */
+  /* } */
   
   @media (min-width: 768px) {
     header {

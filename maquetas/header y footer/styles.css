@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+header {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px; 
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button.cerrar {
+  background-color: red;
+}
+
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 10px;
+}
+
+.footer-links a {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  background-color: #b3b3b3;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-icons a {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #b3b3b3;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  background-color: #888;
+  transform: scale(1.1);
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: auto;
+    text-align: center;
+    color: #333;
+}
+
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; /
+  }
+  #logo {
+    margin-bottom: 0; 
+  }
+  nav {
+    flex-direction: row; 
+  }
+
+
+  footer .footer-links {
+    flex-direction: row; 
+    align-items: flex-start; 
+    justify-content: center; 
+  }
+  footer .footer-social-icons {
+    justify-content: flex-end; 
+  }
+  
+}
