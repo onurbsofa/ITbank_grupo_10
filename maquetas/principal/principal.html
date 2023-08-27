@@ -4,13 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITBANK</title>
+    <link rel="stylesheet" href="../header/styles.css">
+    <link rel="stylesheet" href="../footer//styles.css">
 </head>
 <body>
     <main>
+        <div id="header"></div>
         <div>
-            <h1>Bienvenido/a a ITBANK</h1>
+            <h1>Bienvenido a ITBANK</h1>
+            <h3>Donde tu plata vale</h3> 
         </div>
+        <div id="footer"></div>
     </main>
+
+    <script>
+        fetch('../header/index.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            })
+            .catch(error => console.error('Error:', error));
+
+        fetch('../footer/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
     
 </body>
 </html>
