@@ -36,8 +36,8 @@ body {
     cursor: pointer;
   }
   
-  .button.cerrar {
-    background-color: red;
+  .button.iniciar {
+    background-color: rgba(78, 252, 78, 0.897);
   }
   /* .button:hover{ */
     /* background-color: aqua; */

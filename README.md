@@ -10,7 +10,7 @@
 - Bruno Fazio
 
 ### Descripción:
-El proyecto consiste en la creación de un sistema de Home Banking para el banco ITBA. El mismo permitirá a los clientes del banco realizar operaciones bancarias desde la comodidad de su hogar. El sistema contará con un menú principal que permitirá al usuario elegir entre las siguientes opciones:
+El proyecto consiste en la creación de un sistema de Home Banking para el banco ITbank. El mismo permitirá a los clientes del banco realizar operaciones bancarias desde la comodidad de su hogar. El sistema contará con un menú principal que permitirá al usuario elegir entre las siguientes opciones:
 - Consultar saldo
 - Realizar transferencia
 - Pagar servicios
