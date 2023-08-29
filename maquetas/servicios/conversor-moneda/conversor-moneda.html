@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="./conversor.css">
 </head>
 <body>
-    <h1>Convertidor de Moneda</h1>
+    <h1>Conversor de Moneda</h1>
     <form>
         <label for="amount">Monto:</label>
         <input type="number" id="amount" name="amount" step="any" required>
@@ -26,12 +26,12 @@
             <option value="eur">Euro (EUR)</option>
         </select>
         
-        <button id="convertir">Convertir</button>
+        <button type="button" id="convertir">Convertir</button>
     </form>
     
     <h2>Resultado:</h2>
-    <p id="result">El resultado de la conversión se mostrará aquí.</p>
+    <p id="result"></p>
 
-    <script src="../servicios.js" ></script>
+    <script src="./funcionConversion.js" ></script>
 </body>
 </html>
