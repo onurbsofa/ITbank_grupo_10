@@ -1,7 +1,4 @@
-<!-- 4. El área principal:a. El área principal es donde se mostrará la información relevante segúnla opción seleccionada en el menú lateral.
- Por ejemplo, si el usuario selecciona "Cuentas", esta sección podríamostrar un resumen de las cuentas bancarias del usuario,
- incluyendo los saldos actuales, movimientos recientes o gráficos ilustrativos. -->
- <!DOCTYPE html>
+<!DOCTYPE html>
  <html lang="en">
  <head>
     <meta charset="UTF-8">
@@ -18,7 +15,7 @@
         <div class="inicioSesion">
             <form action="" method="post">
                 <label for="name">DNI</label>
-                <input type="text" id="name" name="name" placeholder="Ingrese su DNI" />
+                <input type="tel" id="number" name="number" placeholder="Ingrese su DNI" pattern="[0-9]*"  />
             
                 <label for="user">Usuario</label>
                 <input type="text" id="user" name="user" placeholder=" Ingrese su usuario"/>
@@ -41,5 +38,6 @@
             <p><a href="#">Crea tus claves</a></p>
         </div>
     </main>
+    <script src="login.js"></script>
  </body>
  </html>
