@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
     const dniInput = document.getElementById("number");
-    const loginButton = document.getElementById("loginButton");
     const userField = document.getElementById("user");
     const passwordField = document.getElementById("password");
     const rememberCheckbox = document.getElementById("remember");
@@ -9,7 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
         this.value = this.value.replace(/[^0-9]/g, "");
     });
 
-    loginButton.addEventListener("click", function(event) {
+    const form = document.querySelector("form");
+    
+    form.addEventListener("submit", function(event) {
         event.preventDefault();
 
         if (isFormValid()) {
