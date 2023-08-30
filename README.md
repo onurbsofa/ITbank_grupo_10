@@ -34,6 +34,6 @@ Maquetado:
 - [x] Consultar y pagar servicios
 - [x] Solicitar préstamo
 - [x] Consultar movimientos
-
+- [x] formulario de login
 
 
